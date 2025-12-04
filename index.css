@@ -1,3 +1,121 @@
-
+main {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid darkcyan;
+  width: 400px;
+  height: 956px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+main .status_bar {
+  margin: 15px auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+main .title_menu {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .title_menu h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+main .title_menu .menu {
+  display: flex;
+  gap: 10px;
+}
+main .list_count {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+main .list_count > p {
+  line-height: 16px;
+}
+main .list_count p:nth-of-type(1) {
+  font-weight: 500;
+}
+main .list_count p:nth-of-type(2) {
+  color: #767676;
+}
+main .list ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #b4b4b4;
+}
+main .list ul li .date_content {
+  display: flex;
+}
+main .list ul li .date_content .date {
+  font-weight: 500;
+  margin-right: 8px;
+}
+main .list ul li:first-child {
+  border: none;
+}
+main .edit {
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  width: 46px;
+  height: 46px;
+  background-color: #1EDEF3;
+  border-radius: 23px;
+}
+main .edit:hover {
+  background-color: #67F0FF;
+}
+main .add_box {
+  z-index: 999;
+  position: relative;
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 40px);
+  display: none;
+  height: fit-content;
+  padding: 10px;
+  border: 1px solid #212121;
+}
+main .add_box .row1 {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+main .add_box .todo_date {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+main .add_box .todo_date span {
+  margin-left: 10px;
+}
+main .add_box .text_box {
+  border: 0.5px solid #b4b4b4;
+}
+main .add_box .text_box .text_on {
+  padding: 10px;
+  height: 175px;
+  width: 100%;
+}
+main .add_box.active {
+  display: block;
+}
+main .notch {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 15px auto;
+}
 
 /*# sourceMappingURL=index.css.map */

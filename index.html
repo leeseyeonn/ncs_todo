@@ -9,6 +9,62 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
-    
+    <main>
+        <div class="status_bar"><img src="./images/Status_Bar.svg" alt="상태바"></div>
+        <section class="title_menu">
+            <h2>To Do</h2>
+            <div class="menu">
+                <div class="search"><img src="./images/search.svg" alt="검색"></div>
+                <div class="side_menu"><img src="./images/menu.svg" alt="메뉴"></div>
+            </div>
+        </section>
+        <div class="list_count">
+            <p>All (3)</p>
+            <p>Today (2)</p>
+        </div>
+        <div class="list">
+            <ul>
+                <!-- 할 일1 -->
+                <li>
+                    <div class="date_content">
+                        <p class="date">12.04</p>
+                        <p class="content">책 반납</p>
+                    </div>
+                    <button type="button" class="check"><img src="./images/checkbox_off.svg" alt="체크off"></button>
+                </li>
+                <!-- 할 일2 -->
+                <li>
+                    <div class="date_content">
+                        <p class="date">12.04</p>
+                        <p class="content">치과 스케일링</p>
+                    </div>
+                    <button type="button" class="check"><img src="./images/checkbox_off.svg" alt="체크off"></button>
+                </li>
+                <!-- 할 일3 -->
+                <li>
+                    <div class="date_content">
+                        <p class="date">12.05</p>
+                        <p class="content">새해 다이어리 찾아보기</p>
+                    </div>
+                    <button type="button" class="check"><img src="./images/checkbox_off.svg" alt="체크off"></button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="edit"><img src="./images/edit.svg" alt=""></button>
+        <div class="add_box">
+            <div class="row1">
+                <button type="button" class="cancel"><img src="./images/close.svg" alt=""></button>
+                <button type="button" class="save">저장</button>
+            </div>
+            <div class="todo_date">
+                <img src="./images/acute.svg" alt="">
+                <span>2025. 12. 11. 목요일</span>
+            </div>
+            <div class="text_box">
+                <textarea class="text_on" placeholder="할 일을 입력해 주세요."></textarea>
+            </div>
+        </div>
+        <div class="notch"><img src="./images/notch.svg" alt=""></div>
+    </main>
 </body>
 </html>
